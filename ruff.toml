@@ -1,0 +1,48 @@
+# exclude = [
+#     ".bzr",
+#     ".direnv",
+#     ".eggs",
+#     ".git",
+#     ".git-rewrite",
+#     ".hg",
+#     ".ipynb_checkpoints",
+#     ".mypy_cache",
+#     ".nox",
+#     ".pants.d",
+#     ".pyenv",
+#     ".pytest_cache",
+#     ".pytype",
+#     ".ruff_cache",
+#     ".svn",
+#     ".tox",
+#     ".venv",
+#     ".vscode",
+#     "__pypackages__",
+#     "_build",
+#     "buck-out",
+#     "build",
+#     "dist",
+#     "node_modules",
+#     "site-packages",
+#     "venv",
+# ]
+
+line-length = 88
+indent-width = 4
+
+[lint]
+select = [
+    "E",   # Pycodestyle (PEP 8) errors
+    "F",   # Pyflakes
+    "W",   # Pycodestyle warnings
+    "I",   # Isort (сортировка импортов)
+    "C",   # Цикломатическая сложность
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade (обновление синтаксиса Python)
+    "PL",  # Pylint (часть правил)
+    "RUF", # Собственные правила Ruff
+]
+
+
+[format]
+quote-style = "single"
